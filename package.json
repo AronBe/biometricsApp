@@ -12,6 +12,8 @@
   "dependencies": {
     "@react-navigation/native": "^6.0.6",
     "@react-navigation/native-stack": "^6.2.5",
+    "expo": "^43.0.3",
+    "expo-local-authentication": "~12.0.1",
     "react": "17.0.2",
     "react-hook-form": "^7.19.5",
     "react-native": "0.66.2",

@@ -10,7 +10,7 @@ import Dashboard from '../main/screens/Dashboard';
 const Stack = createNativeStackNavigator();
 
 const Navigator = () => {
-  const isLoggedIn = true;
+  const isLoggedIn = false;
   return (
     <NavigationContainer>
       <Stack.Navigator>

@@ -4,17 +4,18 @@ import React from 'react';
 import {AuthRoutes} from '../auth/navigation';
 import Login from '../auth/screens/Login';
 import Signup from '../auth/screens/Signup';
+import {useUser} from '../core/hooks/useUser';
 import {MainRoutes} from '../main/navigator';
 import Dashboard from '../main/screens/Dashboard';
 
 const Stack = createNativeStackNavigator();
 
 const Navigator = () => {
-  const isLoggedIn = false;
+  const {user} = useUser();
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        {isLoggedIn ? (
+        {user?.isLoggedIn ? (
           <Stack.Screen
             name={MainRoutes.DASHBOARD}
             component={Dashboard}
